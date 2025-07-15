@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasika | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+ <!-- Font Awesome 6 Free CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home animated-section" id="home">
+    <div class="intro-text">
+      <h3>Hello, it's me</h3>
+      <h1>Jasika <span>Selvaraj</span></h1>
+      <h2>I'm a <span class="typing"></span></h2>
+      <p>A passionate backend developer and Python enthusiast eager to explore scalable systems, automation, and creative problem-solving. Looking for opportunities to grow and contribute to real-world projects.</p>
+
+<div class="action-row">
+  <div class="social-icons">
+    <a href="mailto:jasiraj815@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="tel:+918148830317" title="Call"><i class="fas fa-phone"></i></a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <a href="assets/resume.pdf" download class="cv-button">Download CV</a>
+</div>
+
+
+    </div>
+<div class="hexagon-wrapper">
+  <div class="hexagon-glow ">
+    <div class="hexagon-inner">
+      
+      <img src="assets/profile.jpg" alt="Jasika Profile" class="hex-image" />
+    </div>
+  </div>
+</div>
+
+</div>
+  </section>
+<section id="about" class="about-section animated-section">
+  <h2>About Me</h2>
+  <!-- <h3 class="highlight-role">Backend Developer!</h3> -->
+
+<div class="about-content">
+  <div class="about-image">
+    <div class="hexagon-frame-float">
+      <img src="assets/profile1.jpg" alt="Jasika Profile" class="hex-image" />
+    </div>
+  </div>
+
+<div class="about-text">
+  <p class="about-text">
+  I'm Jasika Selvaraj, a passionate backend developer with a strong foundation in Python and SQL. 
+  <span id="more" style="display: none;">
+    My expertise includes writing efficient SQL queries, designing database schemas, and developing Python tools for data handling and task scheduling.
+  </span>
+</p>
+
+  <button id="readMoreBtn">Read More</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="services" class="services-section animated-section">
+  <h2>My Services</h2>
+  <div class="services-grid">
+
+<div class="service-card">
+  <i class="fas fa-server service-icon"></i>
+  <h3>Backend Development</h3>
+  <p>
+    Scalable APIs, database design, and server-side logic using Flask, MongoDB, Redis, and Celery.
+    <span class="dots">...</span>
+    <span class="more-text">
+      I also implement secure authentication, caching strategies, and performance tuning for high-traffic applications.
+    </span>
+  </p>
+  <div class="button-row">
+    <button class="read-more-button" onclick="toggleReadMore(this)">Read More</button>
+  </div>
+</div>
+
+<div class="service-card">
+  <i class="fas fa-robot service-icon"></i>
+  <h3>Task Automation</h3>
+  <p>
+    Automated workflows and scheduled tasks with Celery and Redis for efficient system operations.
+    <span class="dots">...</span>
+    <span class="more-text">
+      These systems handle retries, alerts, and background jobs with precision and scalability.
+    </span>
+  </p>
+  <div class="button-row">
+    <button class="read-more-button" onclick="toggleReadMore(this)">Read More</button>
+  </div>
+</div>
+
+<div class="service-card">
+ <i class="fas fa-database service-icon"></i>
+  <h3>Database Optimization & Management</h3>
+  <p>
+    I help businesses manage and optimize their SQL databases for speed, reliability, and data integrity.
+    <span class="dots">...</span>
+    <span class="more-text">
+      From schema design to query tuning, I ensure your data infrastructure is efficient, scalable, and ready for growth — powered by Python scripts and clean logic.
+    </span>
+  </p>
+  <div class="button-row">
+    <button class="read-more-button" onclick="toggleReadMore(this)">Read More</button>
+  </div> 
+</div> 
+</section>
+
+<section id="projects" class="projects-section animated-section">
+  <h2 class="section-title">My Projects</h2>
+<div class="projects-wrapper">
+
+  <!-- 🔊 Project 1 -->
+  <div class="project-card">
+    <div class="slide-layer slide-image">
+      <img src="assets/tts.jpg" alt="Text-to-Audio UI" />
+    </div>
+    <div class="slide-layer slide-title">
+      <h3>Text-to-Audio Converter</h3>
+    </div>
+    <div class="slide-layer slide-description">
+      <p>Converts input to speech using Web Speech API.<br>Includes voice options and playback.</p>
+    </div>
+    <div class="slide-layer slide-button">
+      <button onclick="window.open('https://github.com/Gratitude-jas/text-to-audio', '_blank')">View Code</button>
+    </div>
+  </div>
+
+  <!-- 📅 Project 2 -->
+  <div class="project-card">
+    <div class="slide-layer slide-image">
+      <img src="assets/event.jpg" alt="Event Manager UI" />
+    </div>
+    <div class="slide-layer slide-title">
+      <h3>Event Management System</h3>
+    </div>
+    <div class="slide-layer slide-description">
+      <p>Schedules events and sends reminders via SMS/voice using Flask, Celery, and Twilio.</p>
+    </div>
+    <div class="slide-layer slide-button">
+      <button onclick="window.open('https://github.com/Gratitude-jas/event-manager', '_blank')">View Code</button>
+    </div>
+  </div>
+
+  <!-- 📊 Project 3 -->
+  <div class="project-card">
+    <div class="slide-layer slide-image">
+      <img src="assets/intern.jpg" alt="Internship Tracker UI" />
+    </div>
+    <div class="slide-layer slide-title">
+      <h3>Internship Tracker</h3>
+    </div>
+    <div class="slide-layer slide-description">
+      <p>Tracks internship applications and deadlines.<br>Suggests opportunities based on skills.</p>
+    </div>
+    <div class="slide-layer slide-button">
+      <button onclick="window.open('https://github.com/Gratitude-jas/internship-tracker', '_blank')">View Code</button>
+    </div>
+  </div>
+
+</div>
+
+<section class="contact-section animated-section" id="contact">
+  <h2 class="section-title">Contact Me!</h2>
+  <form action="https://formspree.io/f/xrblzddv" method="POST" class="contact-form" id="contactorm">
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+
+    <div class="inline-fields">
+      <input type="tel" name="mobile" placeholder="Mobile Number" required />
+      <input type="text" name="subject" placeholder="Email Subject" required />
+    </div>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div id="form-status"></div>
+</section>
+
+
+
+<script src="contactFormHandler.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
