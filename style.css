@@ -706,3 +706,10 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
+
+#form-status {
+  margin-top: 10px;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00e0ff;
+  transition: opacity 0.5s ease;
+}

@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
+  const form = document.getElementById("contactorm");
   const status = document.getElementById("form-status");
 
   form.addEventListener("submit", async (e) => {
